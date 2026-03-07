@@ -121,12 +121,14 @@
   display: flex;
   justify-content: flex-end;
   padding: 0 25px 25px 0;
+  gap: 5px;
 }
 
 .card__icon-button {
   border: 2px solid transparent;
   background: none;
   transition: border-color 0.3s ease;
+  padding: 0;
 }
 
 .card__like-button {
@@ -156,6 +158,7 @@
 .window-section {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .save-button {
@@ -166,13 +169,14 @@
   padding: 15px 20px;
   border: solid 2px var(--contour-color);
   transition: box-shadow 0.3s ease;
+  flex-direction: column;
 }
 
-.save-button svg {
+.save-button .popup-icon {
   position: relative;
-  block-size: 1.5rem;
   mix-blend-mode: difference;
   color: var(--color-hover);
+  position: relative;
   z-index: 1;
 }
 
@@ -185,7 +189,6 @@
 }
 
 .popup-window {
-  inline-size: 375px;
   grid-template-columns: min-content 1fr;
   align-items: center;
   gap: 30px 20px;
@@ -195,7 +198,13 @@
 }
 
 .popup-icon {
-  inline-size: 39px;
+  width: 28px;
+}
+
+.popup-icon-big {
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
 }
 
 .popup-window__text {
@@ -244,7 +253,7 @@
 }
 
 .filter {
-  filter: contrast(2) brightness(200%);
+  filter: contrast(2) brightness(200%) blur(0.1rem);
 }
 
 .button:focus-visible {
@@ -333,8 +342,27 @@
 
 .like-icon.is-liked .heart {
   animation: heart-scale 0.3s ease-in 0.1s;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s ease-in 0.3s;
+}
+
+@media (width >= 376px) {
+
+
+.popup-window {
+max-width: 353px;
+}
+
+.save-button {
+  flex-direction: row;
+  
+}
+  
+.save-button svg {
+  block-size: 21px;
+}
+
 }
