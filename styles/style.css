@@ -175,7 +175,6 @@
   position: relative;
   mix-blend-mode: difference;
   color: var(--color-hover);
-  position: relative;
   z-index: 1;
 }
 
