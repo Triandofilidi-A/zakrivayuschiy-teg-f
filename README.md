@@ -7,4 +7,4 @@
 - адаптивная вёрстка
 - использование CSS-переменных
  Ссылка на репозиторий
-https://triandofilidi-a.github.io/zakrivayuschiy-teg-f
+https://triandofilidi-a.github.io/zakrivayuschiy-teg-f/
