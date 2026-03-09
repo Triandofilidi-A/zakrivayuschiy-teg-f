@@ -208,7 +208,6 @@
 .popup-window__text {
   line-height: 150%;
   text-transform: uppercase;
-  max-inline-size: 234px;
 }
 
 .popup-window__form {
